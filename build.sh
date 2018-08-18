@@ -11,8 +11,8 @@ cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/creport/creport.ns
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/creport/creport.npdm atmosphere/titles/0100000000000036/exefs/main.npdm
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/loader/loader.kip PikaNX/loader.kip
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/fs_mitm/fs_mitm.kip PikaNX/fs_mitm.kip
-cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/loader/pm.kip PikaNX/pm.kip
-cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/loader/pm.kip PikaNX/sm.kip
+cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/pm/pm.kip PikaNX/pm.kip
+cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/sm/sm.kip PikaNX/sm.kip
 cp /var/lib/jenkins/workspace/sys-ftpd/sys-ftpd.kip PikaNX/sys-ftpd.kip
 cp -r /var/lib/jenkins/workspace/sys-ftpd/sd_card .
 cp /var/lib/jenkins/workspace/tinfoil/Tinfoil.nro switch/Tinfoil.nro
