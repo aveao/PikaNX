@@ -18,4 +18,6 @@ cp -r /var/lib/jenkins/workspace/sys-ftpd/sd_card .
 cp /var/lib/jenkins/workspace/tinfoil/Tinfoil.nro switch/Tinfoil.nro
 cp -r "../Fake Tickets" atmosphere/exefs_patches
 cp ../README.txt .
-zip -r9 PikaNX-$(date +%s | cut -c 1-8) .
+export DATE=$(date +%s | cut -c 1-8)
+zip -r9 PikaNX-$DATE .
+mv PikaNX-$DATE.zip /var/www/bsnx/PikaNX
