@@ -27,8 +27,8 @@ cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/sm/sm.kip PikaNX/s
 cp /var/lib/jenkins/workspace/sys-ftpd/sys-ftpd.kip PikaNX/sys-ftpd.kip
 cp /var/lib/jenkins/workspace/sys-ftpd/sd_card/ftpd/* ftpd/
 cp /var/lib/jenkins/workspace/nx-hbmenu/nx-hbmenu.nro hbmenu.nro
-cp /var/lib/jenkins/nx-hbloader/hbl.nso atmosphere/titles/010000000000100D/exefs/main
-cp /var/lib/jenkins/nx-hbloader/hbl.npdm atmosphere/titles/010000000000100D/exefs/main.npdm
+cp /var/lib/jenkins/workspace/nx-hbloader/hbl.nso atmosphere/titles/010000000000100D/exefs/main
+cp /var/lib/jenkins/workspace/nx-hbloader/hbl.npdm atmosphere/titles/010000000000100D/exefs/main.npdm
 touch atmosphere/titles/010000000000100D/exefs/rtld.stub
 cp /var/lib/jenkins/workspace/tinfoil/tinfoil.nro switch/tinfoil.nro
 cp -r "../Fake Tickets" atmosphere/exefs_patches
