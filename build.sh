@@ -13,6 +13,7 @@ mkdir atmosphere/titles/0100000000000036/exefs
 mkdir atmosphere/exefs_patches
 mkdir PikaNX
 mkdir switch
+mkdir ftpd
 
 cp /var/lib/jenkins/workspace/hekate-ctcaer-master/ipl.bin CFW.bin
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/creport/creport.nso atmosphere/titles/0100000000000036/exefs/main
@@ -22,8 +23,8 @@ cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/fs_mitm/fs_mitm.ki
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/pm/pm.kip PikaNX/pm.kip
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/sm/sm.kip PikaNX/sm.kip
 cp /var/lib/jenkins/workspace/sys-ftpd/sys-ftpd.kip PikaNX/sys-ftpd.kip
-cp /var/lib/jenkins/workspace/sys-ftpd/sd_card/* .
-cp /var/lib/jenkins/workspace/tinfoil/Tinfoil.nro switch/Tinfoil.nro
+cp /var/lib/jenkins/workspace/sys-ftpd/sd_card/ftpd/* ftpd/
+cp /var/lib/jenkins/workspace/tinfoil/tinfoil.nro switch/tinfoil.nro
 cp -r "../Fake Tickets" atmosphere/exefs_patches
 cp ../README.txt .
 export DATE=$(date +%s | cut -c 1-8)
