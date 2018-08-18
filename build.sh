@@ -26,6 +26,7 @@ cp /var/lib/jenkins/workspace/sys-ftpd/sys-ftpd.kip PikaNX/sys-ftpd.kip
 cp /var/lib/jenkins/workspace/sys-ftpd/sd_card/ftpd/* ftpd/
 cp /var/lib/jenkins/workspace/tinfoil/tinfoil.nro switch/tinfoil.nro
 cp -r "../Fake Tickets" atmosphere/exefs_patches
+cp /opt/BUILTBY.txt .
 cp ../README.txt .
 cp ../hekate_ipl.ini .
 export DATE=$(date +%s | cut -c 1-8)
