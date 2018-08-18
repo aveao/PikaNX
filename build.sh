@@ -25,10 +25,8 @@ cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/sm/sm.kip PikaNX/s
 cp /var/lib/jenkins/workspace/sys-ftpd/sys-ftpd.kip PikaNX/sys-ftpd.kip
 cp /var/lib/jenkins/workspace/sys-ftpd/sd_card/ftpd/* ftpd/
 cp /var/lib/jenkins/workspace/tinfoil/tinfoil.nro switch/tinfoil.nro
-cd ../
-cp -r "Fake Tickets" build/atmosphere/exefs_patches
-cp README.txt build
-cd build
+cp -r "../Fake Tickets" atmosphere/exefs_patches
+cp ../README.txt .
 export DATE=$(date +%s | cut -c 1-8)
 zip -r9 PikaNX-$DATE.zip .
-mv PikaNX-$DATE.zip /var/www/bsnx/PikaNX
+cp PikaNX-$DATE.zip /var/www/bsnx/PikaNX
