@@ -31,5 +31,4 @@ cp ../README.txt .
 cp ../hekate_ipl.ini .
 export DATE=$(date +%s | cut -c 1-8)
 zip -r9 PikaNX-$DATE.zip .
-zip -r9 PikaNX.zip .
 cp PikaNX-$DATE.zip /var/www/bsnx/PikaNX
