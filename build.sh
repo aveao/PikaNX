@@ -6,16 +6,7 @@
 # Thanks!
 
 mkdir build && cd build
-mkdir -p atmosphere/titles/0100000000000036/exefs
-mkdir -p atmosphere/titles/010000000000100D/exefs
-mkdir -p atmosphere/exefs_patches
-mkdir -p tinfoil/nsp
-mkdir -p bootloader/ini
-mkdir -p bootloader/payloads
-mkdir -p bootloader/sys
-mkdir PikaNX
-mkdir switch
-mkdir ftpd
+mkdir -p atmosphere/titles/0100000000000036/exefs atmosphere/titles/010000000000100D/exefs atmosphere/exefs_patches tinfoil/nsp bootloader/ini bootloader/payloads bootloader/sys PikaNX switch ftpd
 
 cp /var/lib/jenkins/workspace/hekate-ctcaer-master/output/hekate.bin hekate-payload.bin
 cp /var/lib/jenkins/workspace/hekate-ctcaer-master/output/libsys_lp0.bso bootloader/sys/libsys_lp0.bso
