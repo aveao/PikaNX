@@ -6,18 +6,19 @@
 # Thanks!
 
 mkdir build && cd build
-mkdir atmosphere
-mkdir atmosphere/titles
-mkdir atmosphere/titles/0100000000000036
-mkdir atmosphere/titles/0100000000000036/exefs
-mkdir atmosphere/titles/010000000000100D
-mkdir atmosphere/titles/010000000000100D/exefs
-mkdir atmosphere/exefs_patches
+mkdir -p atmosphere/titles/0100000000000036/exefs
+mkdir -p atmosphere/titles/010000000000100D/exefs
+mkdir -p atmosphere/exefs_patches
+mkdir -p tinfoil/nsp
+mkdir -p bootloader/ini
+mkdir -p bootloader/payloads
+mkdir -p bootloader/sys
 mkdir PikaNX
 mkdir switch
 mkdir ftpd
 
-cp /var/lib/jenkins/workspace/hekate-ctcaer-master/ipl.bin CFW.bin
+cp /var/lib/jenkins/workspace/hekate-ctcaer-master/output/hekate.bin hekate-payload.bin
+cp /var/lib/jenkins/workspace/hekate-ctcaer-master/output/libsys_lp0.bso bootloader/sys/libsys_lp0.bso
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/creport/creport.nso atmosphere/titles/0100000000000036/exefs/main
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/creport/creport.npdm atmosphere/titles/0100000000000036/exefs/main.npdm
 cp /var/lib/jenkins/workspace/atmosphere-patched/stratosphere/loader/loader.kip PikaNX/loader.kip
